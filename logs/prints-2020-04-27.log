@@ -1,0 +1,7 @@
+16:06:31.277 [main] INFO  TestSuite.HomePage - Successfully enerned test data
+16:06:50.323 [main] INFO  TestSuite.ValidateNavigationBar - Browser is opened
+16:06:50.672 [main] INFO  TestSuite.ValidateNavigationBar - All coureses is displayed
+16:06:51.231 [main] INFO  TestSuite.ValidateNavigationBar - Navigation Bar is displayed
+16:06:51.514 [main] INFO  TestSuite.ValidateNavigationBar - Browser is closed
+16:07:05.302 [main] INFO  TestSuite.validateTitle - Page is open
+16:07:05.529 [main] INFO  TestSuite.validateTitle - Successfully validated tex massage

@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="4" passed="4">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Suite" duration-ms="80405" started-at="2020-05-06T16:56:59 CEST" finished-at="2020-05-06T16:58:20 CEST">
+    <groups>
+      <group name="cucumber">
+        <method signature="AbstractTestNGCucumberTests.feature(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:CucumberOptions.TestRunner@614ddd49]" name="feature" class="cucumber.api.testng.AbstractTestNGCucumberTests"/>
+        <method signature="AbstractTestNGCucumberTests.feature(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:CucumberOptions.TestRunner@17579e0f]" name="feature" class="cucumber.api.testng.AbstractTestNGCucumberTests"/>
+      </group> <!-- cucumber -->
+    </groups>
+    <test name="Validating user login" duration-ms="40213" started-at="2020-05-06T16:56:59 CEST" finished-at="2020-05-06T16:57:39 CEST">
+      <class name="CucumberOptions.TestRunner">
+        <test-method status="PASS" signature="setUpClass()[pri:0, instance:CucumberOptions.TestRunner@614ddd49]" name="setUpClass" is-config="true" duration-ms="329" started-at="2020-05-06T16:56:59 CEST" finished-at="2020-05-06T16:56:59 CEST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method status="PASS" signature="feature(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:CucumberOptions.TestRunner@614ddd49]" name="feature" duration-ms="26499" started-at="2020-05-06T16:57:00 CEST" description="Runs Cucumber Feature" data-provider="features" finished-at="2020-05-06T16:57:26 CEST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Login into QAClickAcademy page]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- feature -->
+        <test-method status="PASS" signature="feature(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:CucumberOptions.TestRunner@614ddd49]" name="feature" duration-ms="13209" started-at="2020-05-06T16:57:26 CEST" description="Runs Cucumber Feature" data-provider="features" finished-at="2020-05-06T16:57:39 CEST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Validation all title on HomePage]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- feature -->
+        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:CucumberOptions.TestRunner@614ddd49]" name="tearDownClass" is-config="true" duration-ms="4" started-at="2020-05-06T16:57:39 CEST" finished-at="2020-05-06T16:57:39 CEST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownClass -->
+      </class> <!-- CucumberOptions.TestRunner -->
+    </test> <!-- Validating user login -->
+    <test name="Validating title" duration-ms="40161" started-at="2020-05-06T16:57:39 CEST" finished-at="2020-05-06T16:58:20 CEST">
+      <class name="CucumberOptions.TestRunner">
+        <test-method status="PASS" signature="setUpClass()[pri:0, instance:CucumberOptions.TestRunner@17579e0f]" name="setUpClass" is-config="true" duration-ms="30" started-at="2020-05-06T16:57:39 CEST" finished-at="2020-05-06T16:57:39 CEST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method status="PASS" signature="feature(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:CucumberOptions.TestRunner@17579e0f]" name="feature" duration-ms="22706" started-at="2020-05-06T16:57:39 CEST" description="Runs Cucumber Feature" data-provider="features" finished-at="2020-05-06T16:58:02 CEST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Login into QAClickAcademy page]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- feature -->
+        <test-method status="PASS" signature="feature(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:CucumberOptions.TestRunner@17579e0f]" name="feature" duration-ms="17419" started-at="2020-05-06T16:58:02 CEST" description="Runs Cucumber Feature" data-provider="features" finished-at="2020-05-06T16:58:20 CEST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Validation all title on HomePage]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- feature -->
+        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:CucumberOptions.TestRunner@17579e0f]" name="tearDownClass" is-config="true" duration-ms="1" started-at="2020-05-06T16:58:20 CEST" finished-at="2020-05-06T16:58:20 CEST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownClass -->
+      </class> <!-- CucumberOptions.TestRunner -->
+    </test> <!-- Validating title -->
+  </suite> <!-- Suite -->
+</testng-results>

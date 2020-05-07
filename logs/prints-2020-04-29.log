@@ -1,0 +1,7 @@
+19:15:56.735 [main] INFO  TestSuite.HomePage - Successfully enerned test data
+19:16:02.923 [main] INFO  TestSuite.HomePage - Successfully enerned test data
+19:16:15.443 [main] INFO  TestSuite.ValidateNavigationBar - Page is opened
+19:16:15.480 [main] INFO  TestSuite.ValidateNavigationBar - All coureses is displayed
+19:16:15.597 [main] INFO  TestSuite.ValidateNavigationBar - Navigation Bar is displayed
+19:16:15.767 [main] INFO  TestSuite.ValidateNavigationBar - Browser is closed
+19:16:27.994 [main] INFO  TestSuite.validateTitle - Page is open
