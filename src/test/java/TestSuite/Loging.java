@@ -13,9 +13,11 @@ import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 import pageObjects.FirstPage;
 import pageObjects.LoginPage;
+import pageObjects.UsersPage;
 import resources.Base;
 // Test case 1
 public class Loging extends Base {
+	public UsersPage up; 
 	public static Logger Log=LogManager.getLogger(Loging.class.getName());
 	
 	@BeforeTest
@@ -48,6 +50,13 @@ public class Loging extends Base {
 		Log.info("Successfully enerned test data");
 		
 		
+	}
+	@Test
+	
+	public void usersPage() {
+		up= new UsersPage(driver);
+		Assert.assertTrue(up.getSearchBox().isDisplayed());
+
 	}
 	
 	

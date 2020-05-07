@@ -15,14 +15,15 @@ import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
+import pageObjects.CoursePage;
 import pageObjects.FirstPage;
-import pageObjects.SecondPage;
+
 import resources.Base;
 
 public class Course extends Base {
 	public FirstPage fp;
-	public SecondPage sc; 
-	public Course cp;
+	public CoursePage cp; 
+
 	public WebDriver driver; 
 	String currenturi = "https://www.rahulshettyacademy.com/#/index";
 	
@@ -43,7 +44,7 @@ public class Course extends Base {
 	  }
 	@Test
 	public void getUri() {
-    sc= new SecondPage(driver);
+    cp= new CoursePage(driver);
 	String url = driver.getCurrentUrl();
 	if(url==currenturi) {
 		Log.info("Open new page ");	
@@ -52,8 +53,8 @@ public class Course extends Base {
 	}
 	@Test()
 	public void validateText() {
-		 sc= new SecondPage(driver);
-		String text= sc.getValidateText().getText();
+		 cp= new CoursePage(driver);
+		String text= cp.getValidateText().getText();
 		Assert.assertEquals(text, "An Academy to Learn Earn & Shine  in your QA Career");
 		
 		

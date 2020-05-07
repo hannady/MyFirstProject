@@ -7,7 +7,7 @@ import cucumber.api.java.en.And;
 import cucumber.api.junit.Cucumber;
 import pageObjects.FirstPage;
 import pageObjects.LoginPage;
-import pageObjects.portalHomePage;
+
 import resources.Base;
 
 import org.junit.Assert;
@@ -36,19 +36,10 @@ public class StepDefination extends Base {
 		lp.clickSubmit().click();
 	}
 	
-	 @Then("^Erorr message is displayed$")
-	    public void erorr_message_is_displayed() throws Throwable {
-		 lp = new LoginPage(driver);
-	       String errorMessage =lp.getValidationErrorMessage().getText();
-	       Assert.assertEquals(errorMessage, "Invalid email or password.");
-	    }
+	 
 
 
-	@Then("^User is successfully logged in$")
-	public void user_is_successfully_logged_in() throws Throwable {
-		portalHomePage ph = new portalHomePage(driver);
-		Assert.assertTrue(ph.getSearchField().isDisplayed());
-	}
+	
 
 	@And("^Navigate to \"([^\"]*)\" site$")
 	public void navigate_to_something_site(String strArg1) throws Throwable {

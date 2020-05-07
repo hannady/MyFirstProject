@@ -18,10 +18,10 @@
          <plugin>
             <groupId>org.apache.maven.plugins</groupId>
             <artifactId>maven-surefire-plugin</artifactId>
-            <version>3.0.0-M4</version>
+           <version>3.0.0-M4</version>
             <configuration>
                <suiteXmlFiles>
-                  <suiteXmlFile>testngCucumber.xml</suiteXmlFile>
+                  <suiteXmlFile>testng.xml</suiteXmlFile>
                </suiteXmlFiles>
             </configuration>
          </plugin>
@@ -32,7 +32,7 @@
          <groupId>junit</groupId>
          <artifactId>junit</artifactId>
          <version>4.13</version>
-         <scope>test</scope>
+        <scope>test</scope>
       </dependency>
       <dependency>
          <groupId>org.seleniumhq.selenium</groupId>
@@ -69,26 +69,32 @@
          <artifactId>commons-io</artifactId>
          <version>2.4</version>
       </dependency>
-      <dependency>
+     <dependency>
          <groupId>info.cukes</groupId>
          <artifactId>cucumber-java</artifactId>
-         <version>1.2.5</version>
+         <version>1.2.6</version>
       </dependency>
       <dependency>
-         <groupId>info.cukes</groupId>
-         <artifactId>cucumber-junit</artifactId>
-         <version>1.2.5</version>
-         <scope>test</scope>
-      </dependency>
-      <dependency>
-         <groupId>info.cukes</groupId>
-         <artifactId>cucumber-testng</artifactId>
-         <version>1.2.5</version>
-      </dependency>
-      <dependency>
-         <groupId>info.cukes</groupId>
-         <artifactId>cucumber-core</artifactId>
-         <version>1.2.5</version>
-      </dependency>
+    <groupId>info.cukes</groupId>
+    <artifactId>cucumber-junit</artifactId>
+    <version>1.2.6</version>
+    <type>pom</type>
+    <scope>test</scope>
+</dependency>
+
+     <dependency>
+    <groupId>info.cukes</groupId>
+    <artifactId>cucumber-testng</artifactId>
+    <version>1.2.6</version>
+    <type>pom</type>
+</dependency>
+
+     <dependency>
+    <groupId>info.cukes</groupId>
+    <artifactId>cucumber-core</artifactId>
+    <version>1.2.6</version>
+    <type>pom</type>
+</dependency> 
+
    </dependencies>
 </project>

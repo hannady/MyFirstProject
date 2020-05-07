@@ -19,12 +19,12 @@
 	
 	<test name="Validating user login">
 		<classes>
-			<class name="TestSuite.HomePage" />
+			<class name="TestSuite.Loging" />
 		</classes>
 	</test>
 	<test name="Validating curses page">
 		<classes>
-			<class name="TestSuite.CoursePage" />
+			<class name="TestSuite.Course" />
 		</classes>
 	</test>
 
