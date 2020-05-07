@@ -15,7 +15,7 @@ import org.junit.runner.RunWith;
 
 @RunWith(Cucumber.class)
 public class StepDefination extends Base {
-	public FirstPage fp; 
+	public FirstPage fp;
 
 	@Given("^Initialize the browser$")
 	public void initialize_the_browser() throws Throwable {
@@ -47,7 +47,7 @@ public class StepDefination extends Base {
 
 	@And("^Click on Login$")
 	public void click_on_login() throws Throwable {
-		 fp = new FirstPage(driver);
+		fp = new FirstPage(driver);
 		/*
 		 * if(fp.getPopupSize().size()>0) { fp.getPopUp().click(); }
 		 */
@@ -57,61 +57,55 @@ public class StepDefination extends Base {
 	@And("^close browser$")
 	public void close_browser() throws Throwable {
 		driver.close();
-		driver=null;
+		driver = null;
 	}
-	 @And("^Validate first title message$")
-	    public void validate_first_title_message() throws Throwable {
-		  fp = new FirstPage(driver);
-		 String headerText=fp.getHeder().getText();
+
+	@And("^Validate first title message$")
+	public void validate_first_title_message() throws Throwable {
+		fp = new FirstPage(driver);
+		String realText = fp.getTitle().getText();
+		Assert.assertEquals(realText, "FEATURED COURSES");
+	}
+
+	@And("^Validate second title message$")
+	public void validate_second_title_message() throws Throwable {
+
+		String headerText = fp.getHeder().getText();
 		Assert.assertEquals(headerText, "AN ACADEMY TO LEARN EVERYTHING ABOUT TESTING");
-	    }
 
-	    @And("^Validate second title message$")
-	    public void validate_second_title_message() throws Throwable {
-	    	  fp = new FirstPage(driver);
-	    	String headerText=fp.getHeder().getText();
-			Assert.assertEquals(headerText, "AN ACADEMY TO LEARN EVERYTHING ABOUT TESTING");
-			
-	    }
+	}
 
-	    @And("^Validate second email$")
-	    public void validate_second_email() throws Throwable {
-	    	 fp= new FirstPage(driver);
-			 boolean emailIsDisplayed=fp.getEmail().isDisplayed();
-			 if(emailIsDisplayed==true) {
-				 String emailAdresse=fp.getEmail().getText();
-			Assert.assertEquals(emailAdresse, "info@qaclickacademy.com"); 
-			 }
-	    }
+	@And("^Validate second email$")
+	public void validate_second_email() throws Throwable {
 
-	    @And("^Validate phoneNumber$")
-	    public void validate_phonenumber() throws Throwable {
-	    	 fp= new FirstPage(driver);
-	         boolean numberisDispalyed=fp.getPhonenNumber().isDisplayed();
-	    		if(	numberisDispalyed==true) {
-	    			String phoneNumber= fp.getPhonenNumber().getText();
-	    			Assert.assertEquals(phoneNumber, "(+1) 323-744-6780");
-	    		}
-	    		
-	    } 
+		boolean emailIsDisplayed = fp.getEmail().isDisplayed();
+		if (emailIsDisplayed == true) {
+			String emailAdresse = fp.getEmail().getText();
+			Assert.assertEquals(emailAdresse, "info@qaclickacademy.com");
+		}
+	}
 
-	    		    @When("^Check navigation bar is displayed$")
-	    		    public void check_navigation_bar_is_displayed() throws Throwable {
-	    		    	fp = new FirstPage(driver);
-	    				Assert.assertTrue(fp.getnavigateBar().isDisplayed());
-	    		    }
+	@And("^Validate phoneNumber$")
+	public void validate_phonenumber() throws Throwable {
 
-	    		    @Then("^Number of navigation bar should be ten$")
-	    		    public void number_of_navigation_bar_should_be_ten() throws Throwable {
-	    		    	fp = new FirstPage(driver);
-                        Assert.assertEquals(fp.getallCourses().size(), 10);
-	    		    }
+		boolean numberisDispalyed = fp.getPhonenNumber().isDisplayed();
+		if (numberisDispalyed == true) {
+			String phoneNumber = fp.getPhonenNumber().getText();
+			Assert.assertEquals(phoneNumber, "(+1) 323-744-6780");
+		}
 
-	    		   
+	}
 
-	    		    
-	    		}
-	    
+	@When("^Check navigation bar is displayed$")
+	public void check_navigation_bar_is_displayed() throws Throwable {
 
-	 
+		Assert.assertTrue(fp.getnavigateBar().isDisplayed());
+	}
 
+	@Then("^Number of navigation bar should be ten$")
+	public void number_of_navigation_bar_should_be_ten() throws Throwable {
+
+		Assert.assertEquals(fp.getallCourses().size(), 10);
+	}
+
+}
