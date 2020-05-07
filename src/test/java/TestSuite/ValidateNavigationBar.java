@@ -36,14 +36,18 @@ public class ValidateNavigationBar extends Base {
 		fp = new FirstPage(driver);
 		Assert.assertTrue(fp.getnavigateBar().isDisplayed());
 		Log.info("Navigation Bar is displayed");
+		
+		
 	}
 
 	@Test()
 	// Third 4th case
 	public void testAllCourses() throws IOException, InterruptedException {
 		fp = new FirstPage(driver);
-		Assert.assertEquals(fp.getallCourses().size(), 10);
-		Log.info("All coureses is displayed");
+	
+			Assert.assertEquals(fp.getallCourses().size(), 10);
+			Log.info("All coureses is displayed");	
+		
 	}
 
 	@AfterTest // Close page

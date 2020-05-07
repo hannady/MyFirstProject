@@ -92,8 +92,26 @@ public class StepDefination extends Base {
 	    			String phoneNumber= fp.getPhonenNumber().getText();
 	    			Assert.assertEquals(phoneNumber, "(+1) 323-744-6780");
 	    		}
-	    }
+	    		
+	    } 
+
+	    		    @When("^Check navigation bar is displayed$")
+	    		    public void check_navigation_bar_is_displayed() throws Throwable {
+	    		    	fp = new FirstPage(driver);
+	    				Assert.assertTrue(fp.getnavigateBar().isDisplayed());
+	    		    }
+
+	    		    @Then("^Number of navigation bar should be ten$")
+	    		    public void number_of_navigation_bar_should_be_ten() throws Throwable {
+	    		    	fp = new FirstPage(driver);
+                        Assert.assertEquals(fp.getallCourses().size(), 10);
+	    		    }
+
+	    		   
+
+	    		    
+	    		}
+	    
 
 	 
 
-}
