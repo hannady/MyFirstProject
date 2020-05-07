@@ -16,6 +16,8 @@ import org.junit.runner.RunWith;
 @RunWith(Cucumber.class)
 public class StepDefination extends Base {
 	public FirstPage fp;
+	public LoginPage lp;
+	public String errorMessage;
 
 	@Given("^Initialize the browser$")
 	public void initialize_the_browser() throws Throwable {
@@ -25,7 +27,7 @@ public class StepDefination extends Base {
 
 	@When("^User enters (.+) and (.+)$")
 	public void user_enters_and(String username, String password) throws Throwable {
-		LoginPage lp = new LoginPage(driver);
+		 lp = new LoginPage(driver);
 		lp.getEmail().click();
 
 		lp.getEmail().sendKeys(username);
@@ -33,6 +35,14 @@ public class StepDefination extends Base {
 		lp.getPassword().sendKeys(password);
 		lp.clickSubmit().click();
 	}
+	
+	 @Then("^Erorr message is displayed$")
+	    public void erorr_message_is_displayed() throws Throwable {
+		 lp = new LoginPage(driver);
+	       String errorMessage =lp.getValidationErrorMessage().getText();
+	       Assert.assertEquals(errorMessage, "Invalid email or password.");
+	    }
+
 
 	@Then("^User is successfully logged in$")
 	public void user_is_successfully_logged_in() throws Throwable {
@@ -98,14 +108,15 @@ public class StepDefination extends Base {
 
 	@When("^Check navigation bar is displayed$")
 	public void check_navigation_bar_is_displayed() throws Throwable {
-
+		fp = new FirstPage(driver);
 		Assert.assertTrue(fp.getnavigateBar().isDisplayed());
 	}
 
 	@Then("^Number of navigation bar should be ten$")
 	public void number_of_navigation_bar_should_be_ten() throws Throwable {
-
+		
 		Assert.assertEquals(fp.getallCourses().size(), 10);
 	}
-
+	
+	
 }

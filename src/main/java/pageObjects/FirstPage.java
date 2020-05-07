@@ -81,15 +81,8 @@ public class FirstPage {
 
 
 	public WebElement getPhonenNumber() {
-		// TODO Auto-generated method stub
+		
 		return phoneNumber;
 	}
-	/*public List<WebElement> getPopupSize() {
-		// TODO Auto-generated method stub
-		//return popup;
-	}
-	//public WebElement getPopUp() {
-		
-		//return title; 
-	}*/
+	
 }

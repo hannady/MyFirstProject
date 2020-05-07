@@ -50,9 +50,11 @@ public class HomePage extends Base {
 		
 	}
 	
+	
+	
 		
 
-@AfterTest // clouse page 
+@AfterTest // close page 
 
 public void teardown() {
 	driver.close();

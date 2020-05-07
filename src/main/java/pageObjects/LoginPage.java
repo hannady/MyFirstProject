@@ -17,6 +17,8 @@ public class LoginPage {
 	
 	@FindBy(xpath = "//input[@type= 'submit']")
 	private WebElement submit;
+	@FindBy(xpath= "//div[@class='alert alert-danger']")
+	private WebElement validationErrorMessge;
 	
 
 	public LoginPage(WebDriver driver) {
@@ -39,5 +41,9 @@ public class LoginPage {
 	public WebElement clickSubmit() {
 		return submit;
 
+	}
+	public WebElement getValidationErrorMessage() {
+		 return validationErrorMessge;
+		
 	}
 }

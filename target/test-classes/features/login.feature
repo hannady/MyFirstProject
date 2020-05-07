@@ -1,4 +1,5 @@
 Feature: Login into QAClickAcademy page
+ 
 
   Scenario Outline: Postive test validation login
     Given Initialize the browser
@@ -12,4 +13,6 @@ Feature: Login into QAClickAcademy page
   
       | username                  | password | 
       | ira.maksmumic88@gmail.com | 123456   | 
+      
+
       

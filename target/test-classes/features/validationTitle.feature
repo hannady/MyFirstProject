@@ -12,7 +12,7 @@ Feature: Validation all title on HomePage
    Scenario: Validation navigation Bar on HomePage
     Given Initialize the browser
       And Navigate to "http://www.qaclickacademy.com/" site
-     When Check navigation bar is displayed
+     And Check navigation bar is displayed
      Then Number of navigation bar should be ten
       And close browser
     
