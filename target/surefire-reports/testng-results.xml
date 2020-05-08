@@ -1,81 +1,49 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="4" passed="4">
+<testng-results skipped="0" failed="0" ignored="0" total="7" passed="7">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="107254" started-at="2020-05-07T15:07:06 CEST" finished-at="2020-05-07T15:08:53 CEST">
+  <suite name="Suite" duration-ms="31236" started-at="2020-05-08T16:22:42 CEST" finished-at="2020-05-08T16:23:13 CEST">
     <groups>
-      <group name="cucumber">
-        <method signature="AbstractTestNGCucumberTests.feature(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:CucumberOptions.TestRunner@614ddd49]" name="feature" class="cucumber.api.testng.AbstractTestNGCucumberTests"/>
-        <method signature="AbstractTestNGCucumberTests.feature(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:CucumberOptions.TestRunner@17579e0f]" name="feature" class="cucumber.api.testng.AbstractTestNGCucumberTests"/>
-      </group> <!-- cucumber -->
     </groups>
-    <test name="Validating user login" duration-ms="56173" started-at="2020-05-07T15:07:06 CEST" finished-at="2020-05-07T15:08:02 CEST">
-      <class name="CucumberOptions.TestRunner">
-        <test-method status="PASS" signature="setUpClass()[pri:0, instance:CucumberOptions.TestRunner@614ddd49]" name="setUpClass" is-config="true" duration-ms="284" started-at="2020-05-07T15:07:06 CEST" finished-at="2020-05-07T15:07:06 CEST">
+    <test name="Check Navigate bar" duration-ms="31236" started-at="2020-05-08T16:22:42 CEST" finished-at="2020-05-08T16:23:13 CEST">
+      <class name="TestSuite.ValidateHompage">
+        <test-method status="PASS" signature="openBrowser()[pri:0, instance:TestSuite.ValidateHompage@22fcf7ab]" name="openBrowser" is-config="true" duration-ms="19425" started-at="2020-05-08T16:22:42 CEST" finished-at="2020-05-08T16:23:01 CEST">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- setUpClass -->
-        <test-method status="PASS" signature="feature(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:CucumberOptions.TestRunner@614ddd49]" name="feature" duration-ms="27579" started-at="2020-05-07T15:07:06 CEST" description="Runs Cucumber Feature" data-provider="features" finished-at="2020-05-07T15:07:33 CEST">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Login into QAClickAcademy page]]>
-              </value>
-            </param>
-          </params>
+        </test-method> <!-- openBrowser -->
+        <test-method status="PASS" signature="getPhoneNumber()[pri:0, instance:TestSuite.ValidateHompage@22fcf7ab]" name="getPhoneNumber" duration-ms="367" started-at="2020-05-08T16:23:01 CEST" finished-at="2020-05-08T16:23:01 CEST">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- feature -->
-        <test-method status="PASS" signature="feature(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:CucumberOptions.TestRunner@614ddd49]" name="feature" duration-ms="28174" started-at="2020-05-07T15:07:33 CEST" description="Runs Cucumber Feature" data-provider="features" finished-at="2020-05-07T15:08:02 CEST">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Validation all title on HomePage]]>
-              </value>
-            </param>
-          </params>
+        </test-method> <!-- getPhoneNumber -->
+        <test-method status="PASS" signature="testAllCourses()[pri:0, instance:TestSuite.ValidateHompage@22fcf7ab]" name="testAllCourses" duration-ms="319" started-at="2020-05-08T16:23:01 CEST" finished-at="2020-05-08T16:23:02 CEST">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- feature -->
-        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:CucumberOptions.TestRunner@614ddd49]" name="tearDownClass" is-config="true" duration-ms="4" started-at="2020-05-07T15:08:02 CEST" finished-at="2020-05-07T15:08:02 CEST">
+        </test-method> <!-- testAllCourses -->
+        <test-method status="PASS" signature="testNavigateBar()[pri:0, instance:TestSuite.ValidateHompage@22fcf7ab]" name="testNavigateBar" duration-ms="222" started-at="2020-05-08T16:23:02 CEST" finished-at="2020-05-08T16:23:02 CEST">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- tearDownClass -->
-      </class> <!-- CucumberOptions.TestRunner -->
-    </test> <!-- Validating user login -->
-    <test name="Validating title" duration-ms="51051" started-at="2020-05-07T15:08:02 CEST" finished-at="2020-05-07T15:08:53 CEST">
-      <class name="CucumberOptions.TestRunner">
-        <test-method status="PASS" signature="setUpClass()[pri:0, instance:CucumberOptions.TestRunner@17579e0f]" name="setUpClass" is-config="true" duration-ms="17" started-at="2020-05-07T15:08:02 CEST" finished-at="2020-05-07T15:08:02 CEST">
+        </test-method> <!-- testNavigateBar -->
+        <test-method status="PASS" signature="testNewLetters()[pri:0, instance:TestSuite.ValidateHompage@22fcf7ab]" name="testNewLetters" duration-ms="9365" started-at="2020-05-08T16:23:02 CEST" finished-at="2020-05-08T16:23:11 CEST">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- setUpClass -->
-        <test-method status="PASS" signature="feature(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:CucumberOptions.TestRunner@17579e0f]" name="feature" duration-ms="23606" started-at="2020-05-07T15:08:02 CEST" description="Runs Cucumber Feature" data-provider="features" finished-at="2020-05-07T15:08:25 CEST">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Login into QAClickAcademy page]]>
-              </value>
-            </param>
-          </params>
+        </test-method> <!-- testNewLetters -->
+        <test-method status="PASS" signature="testingValidateTitle()[pri:0, instance:TestSuite.ValidateHompage@22fcf7ab]" name="testingValidateTitle" duration-ms="108" started-at="2020-05-08T16:23:11 CEST" finished-at="2020-05-08T16:23:11 CEST">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- feature -->
-        <test-method status="PASS" signature="feature(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:CucumberOptions.TestRunner@17579e0f]" name="feature" duration-ms="27417" started-at="2020-05-07T15:08:25 CEST" description="Runs Cucumber Feature" data-provider="features" finished-at="2020-05-07T15:08:53 CEST">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Validation all title on HomePage]]>
-              </value>
-            </param>
-          </params>
+        </test-method> <!-- testingValidateTitle -->
+        <test-method status="PASS" signature="validateEmail()[pri:0, instance:TestSuite.ValidateHompage@22fcf7ab]" name="validateEmail" duration-ms="183" started-at="2020-05-08T16:23:11 CEST" finished-at="2020-05-08T16:23:12 CEST">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- feature -->
-        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:CucumberOptions.TestRunner@17579e0f]" name="tearDownClass" is-config="true" duration-ms="1" started-at="2020-05-07T15:08:53 CEST" finished-at="2020-05-07T15:08:53 CEST">
+        </test-method> <!-- validateEmail -->
+        <test-method status="PASS" signature="validateHeder()[pri:0, instance:TestSuite.ValidateHompage@22fcf7ab]" name="validateHeder" duration-ms="90" started-at="2020-05-08T16:23:12 CEST" finished-at="2020-05-08T16:23:12 CEST">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- tearDownClass -->
-      </class> <!-- CucumberOptions.TestRunner -->
-    </test> <!-- Validating title -->
+        </test-method> <!-- validateHeder -->
+        <test-method status="PASS" signature="teardown()[pri:0, instance:TestSuite.ValidateHompage@22fcf7ab]" name="teardown" is-config="true" duration-ms="1087" started-at="2020-05-08T16:23:12 CEST" finished-at="2020-05-08T16:23:13 CEST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- TestSuite.ValidateHompage -->
+    </test> <!-- Check Navigate bar -->
   </suite> <!-- Suite -->
 </testng-results>

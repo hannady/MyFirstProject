@@ -11,7 +11,7 @@ import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
-import pageObjects.FirstPage;
+import pageObjects.Hompage;
 import pageObjects.LoginPage;
 import pageObjects.UsersPage;
 import resources.Base;
@@ -37,7 +37,7 @@ public class Loging extends Base {
 		// creating object to that class and invoke methods of it
 				driver.get(prop.getProperty("url"));
 		
-		FirstPage fp= new FirstPage(driver);
+		Hompage fp= new Hompage(driver);
 		fp.getLogin().click();
 		
 		LoginPage lp = new LoginPage(driver);

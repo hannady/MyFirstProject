@@ -19,7 +19,7 @@ public class LoginPage {
 	private WebElement submit;
 	
 	
-
+//When User should input username and password
 	public LoginPage(WebDriver driver) {
 		this.driver = driver;
 		PageFactory.initElements(driver, this);

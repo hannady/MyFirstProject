@@ -6,18 +6,18 @@
 <listener class-name="resources.ExtentReporterNG"/>
 
 </listeners>
- <test name="Validate title in the page">
+ <!--  <test name="Validate title in the page">
 		<classes>
 			<class name="TestSuite.validateTitle" />
 		</classes>
-	</test>
+	</test>-->
 	<test name="Check Navigate bar">
 		<classes>
-			<class name="TestSuite.ValidateNavigationBar" />
+			<class name="TestSuite.ValidateHompage" />
 		</classes>
 	</test>
 	
-	<test name="Validating user login">
+	<!--  <test name="Validating user login">
 		<classes>
 			<class name="TestSuite.Loging" />
 		</classes>
@@ -26,6 +26,6 @@
 		<classes>
 			<class name="TestSuite.Course" />
 		</classes>
-	</test>
+	</test>-->
 
 </suite> 

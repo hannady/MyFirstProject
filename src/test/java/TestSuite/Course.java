@@ -16,12 +16,12 @@ import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
 import pageObjects.CoursePage;
-import pageObjects.FirstPage;
+import pageObjects.Hompage;
 
 import resources.Base;
 
 public class Course extends Base {
-	public FirstPage fp;
+	public Hompage fp;
 	public CoursePage cp; 
 
 	public WebDriver driver; 
@@ -38,7 +38,7 @@ public class Course extends Base {
 	
 	@Test()
    public void clickOnCoursesButton() {
-	 fp = new FirstPage(driver);
+	 fp = new Hompage(driver);
       fp.getCoursesButton().click();
 	  Log.info("Click on Courses Buttion ");
 	  }
